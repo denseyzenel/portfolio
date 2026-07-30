@@ -1,0 +1,215 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b0b0d;
+  --bg-raised: #131316;
+  --ink: #f4f1ea;
+  --ink-dim: #9a968c;
+  --amber: #e2a542;
+  --amber-dim: #8a6a2e;
+  --line: #232226;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-display), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--amber);
+  color: #171408;
+}
+
+a {
+  color: inherit;
+}
+
+.container-content {
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container-content {
+    padding-inline: 2.5rem;
+  }
+}
+
+/* Hairline section rule, reused across the page */
+.section-rule {
+  border-top: 1px solid var(--line);
+}
+
+/* Numbered section label, e.g. "01  Work" with a small paw mark */
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+
+/* Animated underline link, used for nav + inline CTAs */
+.link-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.link-underline:hover::after {
+  transform: scaleX(1);
+}
+
+/* Skills marquee track */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 26s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Fade-up entrance used on section headings */
+.fade-up {
+  animation: fadeUp 0.7s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stacked hero name — a subtle doubled-letter "cat-eye glint" on hover instead of
+   the reference site's neon glitch effect. Purely CSS, no JS required. */
+.glint-text {
+  position: relative;
+  display: inline-block;
+}
+
+.glint-text::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  color: var(--amber);
+  opacity: 0;
+  clip-path: inset(0 100% 0 0);
+  transition: opacity 0.4s ease, clip-path 0.6s ease;
+  pointer-events: none;
+}
+
+.glint-text:hover::after {
+  opacity: 0.55;
+  clip-path: inset(0 0 0 0);
+}
+
+/* Sleeping cat — one-time wake/stretch on scroll into view */
+.cat-asleep {
+  transform: scaleY(0.92);
+}
+
+.cat-awake {
+  animation: catStretch 1.1s ease-in-out forwards;
+}
+
+@keyframes catStretch {
+  0% {
+    transform: scaleY(0.9) scaleX(1);
+  }
+  35% {
+    transform: scaleY(1.16) scaleX(0.9);
+  }
+  60% {
+    transform: scaleY(0.95) scaleX(1.05);
+  }
+  100% {
+    transform: scaleY(1) scaleX(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cat-awake {
+    animation: none;
+  }
+}
+
+/* Cursor-chasing pixel cat — slow breathing loop while sitting at rest */
+.cat-breathe {
+  transform-origin: bottom center;
+  animation: catBreathe 2.4s ease-in-out infinite;
+}
+
+@keyframes catBreathe {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.04);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cat-breathe {
+    animation: none;
+  }
+}
+
+/* Scrollbar, kept minimal and dark */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 999px;
+}
