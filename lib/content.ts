@@ -72,10 +72,20 @@ export type ExperienceItem = {
 };
 
 export const experience: ExperienceItem[] = [
+    {
+    company: "New Life Church",
+    role: "Website / App Administrator",
+    period: "August 2026 – Present",
+    location: "Glasgow, UK",
+    points: [
+      "Digitized Sunday School attendance for 26+ children by implementing a Subsplash barcode check-in system workflow, replacing paper logs with accurate, on-demand attendance data",
+      "Managed the Subsplash CHMS to publish and maintain event, ministry, and app content for a 420 member congregation, keeping 20+ recurring events accurate week to week."
+    ],
+  },
   {
     company: "Oud Studio",
     role: "Senior Sales Advisor",
-    period: "November 2025 – Present",
+    period: "November 2025 – August 2026",
     location: "United Kingdom",
     points: [
       "Improved sales conversion by 10–15% by analysing customer purchasing patterns across 40+ daily interactions and identifying the trends that drove results.",
