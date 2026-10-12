@@ -10,6 +10,14 @@ export type MoreProject = {
 };
 
 export const moreProjects: MoreProject[] = [
+    {
+    title: "Sentiment Analysis of Amazon Reviews",
+    description:
+      "Applied NLP, VADER sentiment scoring and Transformers to classify review sentiment with 85% accuracy and detect sarcasm using Hugging Face.",
+    tags: ["Natural Language Processing (NLP)", "Transformers"],
+    linkedinUrl:
+      "https://www.linkedin.com/in/denseyzenelmaben/overlay/1339205465/skill-associations-details/",
+  },
   {
     title: "Business Analytics for Avon Orthopedic Clinic",
     description:
@@ -25,14 +33,6 @@ export const moreProjects: MoreProject[] = [
     tags: ["Machine Learning", "Orange (Software)"],
     linkedinUrl:
       "https://www.linkedin.com/in/denseyzenelmaben/overlay/1339402236/skill-associations-details/",
-  },
-  {
-    title: "Electronic Dice System",
-    description:
-      "Created a random number generator using microcontroller logic and sensor-based activation, achieving reliable output with a less than 1% error margin.",
-    tags: ["Microcontrollers", "Embedded Systems"],
-    linkedinUrl:
-      "https://www.linkedin.com/in/denseyzenelmaben/overlay/1340377698/skill-associations-details/",
   },
   {
     title: "Glasses Direct E-commerce Database",
@@ -67,11 +67,11 @@ export const moreProjects: MoreProject[] = [
       "https://www.linkedin.com/in/denseyzenelmaben/overlay/1340227420/skill-associations-details/",
   },
   {
-    title: "Sentiment Analysis of Amazon Reviews",
+    title: "Electronic Dice System",
     description:
-      "Applied NLP, VADER sentiment scoring and Transformers to classify review sentiment with 85% accuracy and detect sarcasm using Hugging Face.",
-    tags: ["Natural Language Processing (NLP)", "Transformers"],
+      "Created a random number generator using microcontroller logic and sensor-based activation, achieving reliable output with a less than 1% error margin.",
+    tags: ["Microcontrollers", "Embedded Systems"],
     linkedinUrl:
-      "https://www.linkedin.com/in/denseyzenelmaben/overlay/1339205465/skill-associations-details/",
-  },
+      "https://www.linkedin.com/in/denseyzenelmaben/overlay/1340377698/skill-associations-details/",
+  }
 ];
