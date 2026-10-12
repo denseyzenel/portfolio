@@ -1,5 +1,3 @@
-// Single source of truth for copy that appears in more than one place.
-// Sourced directly from Densey's CV — nothing here is placeholder content.
 
 export const profile = {
   name: "Densey Zenel Maben",
@@ -12,55 +10,57 @@ export const profile = {
   timezone: "GMT",
   year: "2026",
   summary:
-    "Data Analyst with 3+ years at Capgemini Technology Services validating, transforming and reporting on large, complex datasets with 10000+ daily records across financial services and retail. The MSc in Data Science for Business with a Distinction came after, so I'd understand the maths behind why those numbers moved the way they did. Capgemini gave me their Passionate Young Professional Certification along the way. I work in Python, SQL and Power BI and I'd rather trace a number back to its root cause than accept it at face value. If a figure looks even slightly off to me, I will not let it go until I know why"};
+    "Data Analyst with 3+ years at Capgemini, delivering KPI reporting and data analysis for banking and retail clients across Hong Kong, Taiwan and Japan. I analysed 10,000+ daily transactions, cut manual reporting by 40% through SQL and Excel automation, and reconciled data warehouse records to support regulatory reporting. I then completed an MSc in Data Science for Business with Distinction at the University of Stirling, and now build across the full data workflow: Databricks pipelines, Power BI reporting, statistical models and LLM-powered tools. I work in Python, SQL and Power BI, and I trace every number back to its source before anyone relies on it.",
+};
 
 export const heroCopy = {
   eyebrow: "Portfolio 2026 · Data Analytics · Open to work",
   lead: "If a number looks suspicious, I will interrogate it until it confesses.",
-  sub: "Data Analyst working across SQL, Python and Power BI. I validate messy data, trace anomalies to root cause, and turn it into reporting people trust. ",
+  sub: "Data Analyst working across SQL, Python, Power BI and Databricks. I validate messy data, trace anomalies to their root cause, and turn the results into reporting people trust.",
 };
 
 export const navLinks = [
   { number: "01", label: "About", href: "/about" },
-  { number: "02", label: "Project", href: "/#work" },
+  { number: "02", label: "Projects", href: "/#work" },
   { number: "03", label: "Contact", href: "/#contact" },
 ];
 
 export const howIWork = [
   {
     number: "01",
-    title: "Question first",
-    body: "I ask what the stakeholder actually needs to decide before I work on any tool. Nobody needs a dashboard I just enjoyed building.",
+    title: "Start with the requirement",
+    body: "I build from what the business needs to decide. At Capgemini, turning client requirements into automated SQL and Excel KPI reporting cut manual reporting effort by 40%.",
   },
   {
     number: "02",
-    title: "Trace it down",
-    body: "An anomaly is never just a flag. It's SQL, Python and reconciliation until I know exactly where it came from.",
+    title: "Check before it's shared",
+    body: "No number reaches a stakeholder until it has been checked. Every Agile sprint, I ran cross-system reconciliation, validation and root cause analysis, resolving each anomaly before publication.",
   },
   {
     number: "03",
-    title: "Explain it clean",
-    body: "No jargon, no forty-tab spreadsheet that only I can navigate. If I can't explain a number in one sentence, I don't understand it well enough yet. I've presented the said numbers to stakeholders in Hong Kong, Taiwan and Japan and gotten the same nod from both. That only happens when the underlying work holds up, not just the slide",
+    title: "Make it decision-ready",
+    body: "Analysis only matters if people can act on it. I've presented findings to non-technical teams in Hong Kong, Taiwan and Japan, and trained 9 colleagues on data validation and delivery practices.",
   },
 ];
 
 export const skillsTicker = [
   "SQL",
   "Python",
-  "R",
   "Power BI",
-  "Machine Learning",
-  "Java",
-  "Angular",
-  "React",
+  "DAX",
+  "Advanced Excel",
+  "Databricks",
+  "PySpark",
+  "Azure SQL",
+  "PostgreSQL",
+  "R",
+  'Java',
   "SAS",
   "Statistical Forecasting",
-  "PostgreSQL",
-  "Azure",
+  "Machine Learning",
+  "LLM Applications",
   "Data Governance",
-  "Risk & Controls",
-  "Advanced Excel",
-  "MongoDB",
+  "Data Reconciliation",
 ];
 
 export type ExperienceItem = {
@@ -72,50 +72,50 @@ export type ExperienceItem = {
 };
 
 export const experience: ExperienceItem[] = [
-    {
+  {
     company: "New Life Church",
-    role: "Website / App Administrator",
-    period: "August 2026 – Present",
+    role: "Website Administrator (Volunteer)",
+    period: "April 2026 - Present",
     location: "Glasgow, UK",
     points: [
-      "Digitized Sunday School attendance for 26+ children by implementing a Subsplash barcode check-in system workflow, replacing paper logs with accurate, on-demand attendance data",
-      "Managed the Subsplash CHMS to publish and maintain event, ministry, and app content for a 420 member congregation, keeping 20+ recurring events accurate week to week."
+      "Shipped weekly website and app updates and maintained CMS content for a 420-member community, keeping 10+ recurring events live and accurate.",
+      "Designed and rolled out a barcode check-in system for 26+ children, replacing paper logs and automating 10 hours a week of manual data entry."
     ],
   },
   {
     company: "Oud Studio",
     role: "Senior Sales Advisor",
-    period: "November 2025 – August 2026",
+    period: "November 2025 - August 2026",
     location: "United Kingdom",
     points: [
-      "Improved sales conversion by 10–15% by analysing customer purchasing patterns across 40+ daily interactions and identifying the trends that drove results.",
+      "Improved sales conversion by 10 to 15% by analysing purchasing patterns across 40+ daily customer interactions and acting on the trends that drove results.",
     ],
   },
   {
     company: "Capgemini Technology Services",
-    role: "Senior Data Analyst — Retail Market Client, Hong Kong & Japan",
-    period: "February 2023 – September 2024",
+    role: "Senior Data Analyst | Retail Client, Hong Kong and Japan",
+    period: "February 2023 - September 2024",
     points: [
-      "Produced clear and accurate reports and visualisations supporting decisions for senior stakeholders across two markets, by writing and maintaining SQL and Python scripts that validated, transformed and enriched 10,000+ daily transaction records.",
-      "Reduced manual reporting effort by 40% by collaborating with stakeholders to understand data requirements and translating them into transformation logic and structured, repeatable data processes in SQL and advanced Excel.",
-      "Strengthened data quality and governance over business reporting, reducing inconsistencies reaching stakeholders, by performing cross-systems reconciliation and quality checks within Agile sprint cycles and tracing anomalies to root cause before publication.",
-      "Maintained data integrity across 4 brands and 16 stores, by configuring the Cegid platform, resolving data issues in cross-market data flows and documenting the fixes applied.",
-      "Communicated findings in a concise, structured and accessible way, presenting analysis in PowerPoint to non-technical stakeholders in two regions while managing own workload across competing market deadlines.",
+      "Prepared analysis-ready data from 10,000+ daily transactions across multiple source systems using complex SQL, enabling KPI and trend analysis for senior stakeholders in 2 markets.",
+      "Cut manual reporting effort by 40% by automating KPI and business metric reporting with SQL and Advanced Excel, built from client requirements.",
+      "Stopped data errors reaching stakeholders by running cross-system reconciliation, validation checks and root cause analysis every Agile sprint, resolving each anomaly before publication.",
+      "Maintained data integrity across 4 brands and 16 stores by configuring the Cegid retail platform and fixing cross-market, onshore and offshore data flow issues.",
+      "Presented findings to non-technical, cross-functional stakeholders in Hong Kong, Taiwan and Japan, turning analysis into clear, decision-ready recommendations.",
     ],
   },
   {
     company: "Capgemini Technology Services",
-    role: "Financial Data Analyst — Financial Services Client",
-    period: "September 2022 – November 2022",
+    role: "Financial Data Analyst | Banking Client",
+    period: "September 2022 - November 2022",
     points: [
-      "Ensured data integrity across customer transaction datasets in a regulated, audited financial services environment by applying SQL based validation, quality checks and reconciliation against internal operating controls and supporting regulatory reporting and audit queries.",
-      "Improved reporting reliability and contributed to continuous improvement of data processes, with control improvements adopted by the client team, by resolving data issues through structured root cause analysis and translating findings into clear proposals for stakeholders.",
+      "Validated and reconciled banking transaction data from the client's data warehouse using SQL and Java.",
+      "Flagged inconsistencies and missing records to keep regulatory reporting accurate.",
     ],
   },
   {
     company: "Capgemini Technology Services",
     role: "Analyst",
-    period: "August 2021 – August 2022",
+    period: "August 2021 - August 2022",
     points: [
       "Delivered a 3-stage approval workflow application using Java, Angular and PostgreSQL by analysing requirements, defining business rules, and validating system behaviour and data outputs against specification across sprint cycles.",
       "Accelerated onboarding by guiding 9 team members through structured training on workflow logic, data validation and delivery practices.",
@@ -134,27 +134,22 @@ export type VolunteeringItem = {
 export const volunteering: VolunteeringItem[] = [
   {
     company: "NLC UPC",
-    role: "Media Team",
-    period: "April 2026 – Present",
+    role: "Media Team (Volunteer)",
+    period: "April 2026 - Present",
     location: "United Kingdom",
     points: [
-      "Produced and edited video content for social media, including event highlights and promotional material, using Adobe Premiere Pro and After Effects.",
-      "Collaborated with the media team to develop creative concepts and storyboards for video projects, ensuring alignment with the organization's brand and messaging.",
-      "Photography and videography for events, capturing high-quality images and footage to be used in marketing materials and social media campaigns.",
-      "Sound mixer and audio engineer for live events, ensuring clear and balanced sound for presentations, performances, and recordings.",
-      "Managed and maintained media equipment, including cameras, microphones, and lighting, ensuring all equipment was in good working condition and ready for use.",
+      "Produce and edit event and promotional video content using Adobe Premiere Pro and After Effects.",
+      "Run live sound, photography and videography for events, and maintain the team's media equipment.",
     ],
   },
   {
     company: "Capgemini Technology Services",
     role: "Analyst Intern",
-    period: "Feb 2021 – May 2021",
+    period: "February 2021 - May 2021",
     location: "India",
     points: [
-      "Worked with a team of 4 to develop a frame and lens for Lenskart application, using Java and React, and presented the final product to senior stakeholders.",
-      "Worked with a team of 3 to develop an Arogya Niketan website which helps user find nearest hospital and doctors, using HTML, CSS, JavaScript and Angular, and presented the final product to senior stakeholders.",
-      "Conducted research on the latest trends in the eyewear industry and healthcare industry to present findings to the team, contributing to the development of new product ideas.",
-      "Assisted in the testing and debugging of the website, identifying and resolving issues to ensure a smooth user experience.",
+      "Built an eyewear frame and lens application in a team of 4 using Java and React, and presented the final product to senior stakeholders.",
+      "Built a website in a team of 3 that helps users find their nearest hospitals and doctors, using HTML, CSS, JavaScript and Angular.",
     ],
   },
   {
@@ -192,14 +187,14 @@ export const education: EducationItem[] = [
   {
     school: "University of Stirling, United Kingdom",
     qualification: "MSc Data Science for Business (Distinction)",
-    period: "September 2024 – November 2025",
+    period: "September 2024 - November 2025",
     detail:
       "Relevant coursework: Machine Learning, Representing and Manipulating Data, Statistics with R, Business Analytics.",
   },
   {
-    school: "NMAM Institute of Technology, Nitte",
-    qualification: "BEng Electronics and Communication Engineering (2:1)",
-    period: "August 2018 – August 2021",
+    school: "NMAM Institute of Technology, Nitte, India",
+    qualification: "BE Electronics and Communication Engineering (Merit)",
+    period: "August 2018 - August 2021",
     detail:
       "Relevant coursework: Artificial Intelligence, Embedded Systems, Machine Learning, Computer Communication Networks.",
   },
@@ -207,36 +202,53 @@ export const education: EducationItem[] = [
 
 export const skillGroups = [
   {
-    title: "Analysis & Modelling",
+    title: "SQL & Databases",
+    items: ["SQL (CTEs, window functions)", "Azure SQL", "PostgreSQL", "MongoDB"],
+  },
+  {
+    title: "Languages, Modelling & Analysis",
     items: [
+      "Python",
+      "R",
+      "SAS",
+      "Regression",
+      "Hypothesis Testing (Chi-Square, Mann-Whitney U)",
+      "Time-Series Forecasting",
       "Machine Learning",
-      "Statistical Analysis & Forecasting",
-      "Trend and Pattern Analysis",
-      "Risk Classification",
-      "Geospatial Analysis",
+      "LLM / GenAI Applications",
     ],
   },
   {
-    title: "Languages & Tools",
-    items: ["SQL", "Python", "R", "Java", "Angular", "React", "SAS", "PostgreSQL", "MongoDB", "Azure", "Git"],
+    title: "BI & Reporting",
+    items: ["Power BI (DAX)", "KPI Reporting", "Data Visualisation", "Advanced Excel"],
   },
   {
-    title: "Reporting & Platforms",
+    title: "Data Engineering",
     items: [
-      "Power BI",
-      "Advanced Excel (Macros, XLOOKUP, VLOOKUP, validation checks)",
-      "KPI Reporting",
+      "ETL / ELT Pipelines",
+      "Databricks",
+      "PySpark",
+      "Medallion Architecture",
+      "Data Warehousing",
+      "Data Modelling",
     ],
   },
   {
-    title: "Quality, Governance & Delivery",
+    title: "Data Quality & Governance",
     items: [
-      "Data Validation, Quality Checks and Reconciliation",
+      "Data Validation",
+      "Reconciliation",
       "Root Cause Analysis",
-      "Data Integrity",
-      "Risk and Controls",
-      "Data Governance",
-      "Stakeholder Engagement",
+      "Data Cleansing",
+      "Data Governance and PII Masking",
+    ],
+  },
+  {
+    title: "Delivery",
+    items: [
+      "Stakeholder Management",
+      "Training and Mentoring",
+      "Process Improvement",
       "Agile Delivery",
     ],
   },
