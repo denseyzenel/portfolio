@@ -9,7 +9,7 @@ import Contact from "@/components/Contact";
 export const metadata: Metadata = {
   title: "Densey Zenel Maben | Data Analyst (SQL, Python, Power BI)",
   description:
-    "Data Analyst with 3+ years at Capgemini and an MSc in Data Science for Business (Distinction). SQL, Python, Power BI and Databricks. Based in Stirling, UK.",
+    "Data Analyst with 3+ years at Capgemini and an MSc in Data Science for Business (Distinction). SQL, Python, Power BI and Databricks.",
 };
 
 export default function HomePage() {
