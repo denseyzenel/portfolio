@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://denseyzenel.dev"),
   title: `${profile.name} — Data Analyst Portfolio`,
   description:
-    "Densey Zenel Maben — Data Analyst with an MSc Data Science for Business (Distinction). SQL, Python and Power BI work in data validation, quality and reporting.",
+    "Densey Zenel Maben - Data Analyst with an MSc Data Science for Business (Distinction). SQL, Python, Databricks and Power BI work in data validation, quality and reporting.",
   icons: {
     icon: "/favicon.svg",
   },
