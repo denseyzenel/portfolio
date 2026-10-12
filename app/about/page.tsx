@@ -14,7 +14,7 @@ import SectionLabel from "@/components/SectionLabel";
 export const metadata: Metadata = {
   title: "About — Densey Zenel Maben",
   description:
-    "The full story: experience, education, skills and certifications behind Densey Zenel Maben's data analytics work.",
+    "The full story: experience, education, skills and certifications behind my work.",
 };
 
 export default function AboutPage() {
