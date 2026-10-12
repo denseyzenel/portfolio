@@ -20,8 +20,8 @@ export default function MoreProjectsPage() {
       </h1>
 
       <p className="mt-6 max-w-2xl text-base leading-relaxed text-ink-dim md:text-lg">
-        The {projects.length} projects on the home page are my main projects. Everything
-        below is some of the additional projects that I have done during my journey.
+        The {projects.length} projects on the home page are my main projects. Everything that is displayed
+        below are some of the additional projects that I have done during my journey.
       </p>
 
       <ul className="mt-12 divide-y divide-line border-t border-line">
