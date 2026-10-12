@@ -5,24 +5,23 @@ import { projects } from "@/lib/projects";
 import SectionLabel from "@/components/SectionLabel";
 
 export const metadata: Metadata = {
-  title: "More Projects — Densey Zenel Maben",
+  title: "More Projects - Densey Zenel Maben",
   description:
-    "Additional data, ML and engineering projects from Densey Zenel Maben, beyond the featured case studies.",
+    "Additional data, ML and engineering projects from Densey Zenel Maben, beyond the featured projects.",
 };
 
 export default function MoreProjectsPage() {
   return (
     <div className="container-content py-16 md:py-24">
-      <SectionLabel number="02">More work</SectionLabel>
+      <SectionLabel number="02">More Projects</SectionLabel>
 
       <h1 className="mt-6 max-w-3xl font-display text-4xl font-semibold leading-tight sm:text-5xl md:text-6xl">
         More projects.
       </h1>
 
       <p className="mt-6 max-w-2xl text-base leading-relaxed text-ink-dim md:text-lg">
-        The {projects.length} projects on the home page are the full case studies. Everything
-        below is additional coursework, prototypes and dissertation-adjacent work — lighter
-        write-ups that link out to the skill details on LinkedIn.
+        The {projects.length} projects on the home page are my main projects. Everything
+        below is some of the additional projects that I have done during my journey.
       </p>
 
       <ul className="mt-12 divide-y divide-line border-t border-line">
