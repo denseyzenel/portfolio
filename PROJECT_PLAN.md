@@ -1,15 +1,5 @@
 # Densey Zenel Maben — Portfolio: Project Plan
 
-Reference studied: https://www.adithyasn.dev/ (Next.js, App Router). Structural DNA borrowed:
-dark canvas, numbered sections (01/02/03), big stacked hero typography, a horizontal
-scrolling skills ticker, minimal project cards that link to full case-study pages, a
-compact "About" teaser on the home page that deep-links to a full `/about` route, and a
-plain-language contact footer. That structure is kept; the tone, palette and copy are
-rebuilt around Densey's CV and a subtle, professional "black cat" aesthetic — no literal
-illustrations, just a warm amber "cat-eye" accent on charcoal/black, paw-mark section
-markers, and light, occasional wordplay ("night vision" for anomaly detection, kept rare
-so it stays professional).
-
 ## Stack
 
 - Next.js 14 (App Router, TypeScript)
